@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilby — история дружбы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Птенец, летящий за курсором -->
+  <div class="cursor-chick" id="cursorChick">🐤</div>
+
+  <!-- Переключатель темы -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">🌙</button>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="hero">
+    <div class="hero__sky"></div>
+    <div class="hero__sun"></div>
+    <div class="hero__clouds">
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+    </div>
+    <div class="hero__ground"></div>
+
+    <div class="hero__content">
+      <p class="hero__kicker">Австралийская глубинка</p>
+      <h1 class="hero__title">Bilby</h1>
+      <p class="hero__subtitle">История дружбы робкого билби и птенца альбатроса</p>
+      <a href="#story" class="btn btn--primary">Смотреть историю ↓</a>
+    </div>
+
+    <div class="hero__characters">
+      <div class="hero__perry" data-parallax="0.4">🦡</div>
+      <div class="hero__chick" data-parallax="0.7">🐤</div>
+    </div>
+  </header>
+
+  <!-- ================= STORY ================= -->
+  <section class="section story" id="story">
+    <div class="container">
+      <h2 class="section__title reveal">Сюжет</h2>
+      <p class="section__lead reveal">Четыре шага от одиночества к дружбе</p>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot">1</div>
+          <h3>Находка</h3>
+          <p>Перри находит птенца альбатроса, перевёрнутого головой вниз, и переворачивает его.</p>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot">2</div>
+          <h3>Нежелание</h3>
+          <p>Билби не хочет забот и пытается оставить птенца в безопасном месте.</p>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot">3</div>
+          <h3>Спасения</h3>
+          <p>Динго, пираньи, крокодилы, эму, акула и пожар — Перри каждый раз спасает друга.</p>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot">4</div>
+          <h3>Финал</h3>
+          <p>Утёс, орёл и прыжок. Перри ловит птенца в воздухе — и они остаются вместе.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHARACTERS ================= -->
+  <section class="section characters" id="characters">
+    <div class="container">
+      <h2 class="section__title reveal">Персонажи</h2>
+      <p class="section__lead reveal">Наведи на карточку — узнаешь факт</p>
+
+      <div class="cards">
+        <div class="card reveal">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="card__emoji">🦡</div>
+              <h3>Перри</h3>
+              <p>Робкий сумчатый барсук</p>
+            </div>
+            <div class="card__back">
+              <p>Билби — ночное животное. Днём он прячется в норе, а ночью ищет еду.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="card__emoji">🐤</div>
+              <h3>Птенец</h3>
+              <p>Маленький альбатрос</p>
+            </div>
+            <div class="card__back">
+              <p>Альбатросы могут спать в полёте и не приземляться месяцами.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="card__emoji">🦅</div>
+              <h3>Орёл</h3>
+              <p>Белобрюхий морской орёл</p>
+            </div>
+            <div class="card__back">
+              <p>Главный антагонист финала. Хватает птенца — но Перри не даёт его в обиду.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DANGERS ================= -->
+  <section class="section dangers" id="dangers">
+    <div class="container">
+      <h2 class="section__title reveal">Опасности</h2>
+      <p class="section__lead reveal">Чем ближе финал — тем темнее небо</p>
+
+      <div class="slider">
+        <button class="slider__btn slider__btn--prev" id="prevBtn">‹</button>
+        <div class="slider__stage" id="sliderStage">
+          <div class="slide is-active" data-level="1">
+            <div class="slide__emoji">🐕</div>
+            <h3>Стая динго</h3>
+            <p>Дикие собаки Австралии — быстрые и стайные.</p>
+          </div>
+          <div class="slide" data-level="2">
+            <div class="slide__emoji">🐟</div>
+            <h3>Пираньи</h3>
+            <p>Озеро, в котором лучше не купаться.</p>
+          </div>
+          <div class="slide" data-level="3">
+            <div class="slide__emoji">🐊</div>
+            <h3>Крокодилы</h3>
+            <p>Терпеливые хищники у самой воды.</p>
+          </div>
+          <div class="slide" data-level="4">
+            <div class="slide__emoji">🐦</div>
+            <h3>Эму</h3>
+            <p>Большая птица с сильными ногами.</p>
+          </div>
+          <div class="slide" data-level="5">
+            <div class="slide__emoji">🦈</div>
+            <h3>Большая белая акула</h3>
+            <p>Океан не прощает ошибок.</p>
+          </div>
+          <div class="slide" data-level="6">
+            <div class="slide__emoji">🔥</div>
+            <h3>Лесной пожар</h3>
+            <p>Самое страшное — огонь в сухой траве.</p>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--next" id="nextBtn">›</button>
+      </div>
+
+      <div class="slider__dots" id="dots"></div>
+    </div>
+  </section>
+
+  <!-- ================= FINALE ================= -->
+  <section class="section finale" id="finale">
+    <div class="finale__sky"></div>
+    <div class="finale__eagle" id="finaleEagle">🦅</div>
+    <div class="container finale__content">
+      <h2 class="section__title reveal">Финал</h2>
+      <p class="finale__text reveal">
+        На крутом утёсе Перри решает оставить птенца — но его хватает морской орёл.
+        Билби прыгает со скалы, нападает на хищника и ловит друга в воздухе.
+      </p>
+      <p class="finale__epilogue reveal">
+        Спустя год подросший альбатрос приземляется на утёсе, где они живут вместе.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= OPINIONS ================= -->
+  <section class="section opinions" id="opinions">
+    <div class="container">
+      <h2 class="section__title reveal">Твоё мнение</h2>
+      <p class="section__lead reveal">Оставь отзыв о мультике Bilby — он сохранится у тебя</p>
+
+      <form class="opinion-form reveal" id="opinionForm">
+        <div class="field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Как тебя зовут?" maxlength="30" required />
+        </div>
+
+        <div class="field">
+          <label for="grade">Класс / школа (необязательно)</label>
+          <input type="text" id="grade" name="grade" placeholder="Например: 7А, школа №5" maxlength="40" />
+        </div>
+
+        <div class="field">
+          <label>Оценка</label>
+          <div class="stars" id="stars">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="text">Мнение</label>
+          <textarea id="text" name="text" rows="4" placeholder="Что тебе понравилось в истории?" maxlength="300" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Отправить мнение</button>
+      </form>
+
+      <h3 class="opinions__title">Мнения зрителей</h3>
+      <div class="opinions__list" id="opinionsList">
+        <p class="opinions__empty" id="emptyNote">Пока мнений нет. Будь первым!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>Bilby · история дружбы</p>
+      <a href="#hero" class="btn btn--ghost">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- Конфетти-слой -->
+  <canvas id="confetti" class="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
